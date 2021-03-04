@@ -36,27 +36,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\Addressable\Loader\AssetsLoader.cs" />
+     <Compile Include="Assets\Scripts\Addressable\Loader\CreateAddressablesLoader.cs" />
+     <Compile Include="Assets\Scripts\Addressable\Loader\AddressableLocationLoader.cs" />
+     <Compile Include="Assets\Scripts\Utility\StaticCoroutine.cs" />
+     <Compile Include="Assets\Scripts\Utility\GUIDebug.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\Script\Utility\StaticCoroutine.cs" />
-     <Compile Include="Assets\Script\Utility\Extensions.cs" />
-     <Compile Include="Assets\Script\Utility\MonoSingleton.cs" />
-     <Compile Include="Assets\Script\Utility\GUIDebug.cs" />
-     <Compile Include="Assets\Script\UI\UI_Manager.cs" />
-     <Compile Include="Assets\Script\UI\UI_Display.cs" />
-     <Compile Include="Assets\Script\Utility\Keys.cs" />
-     <Compile Include="Assets\Script\Utility\Singleton.cs" />
-     <Compile Include="Assets\Script\Utility\MonoInstance.cs" />
-     <Compile Include="Assets\Script\Utility\Utils.cs" />
-     <Compile Include="Assets\Script\Utility\Depug.cs" />
-     <Compile Include="Assets\Script\Addressable\AssetObjects.cs" />
-     <Compile Include="Assets\Script\Addressable\Loader\CreateAddressablesLoader.cs" />
-     <Compile Include="Assets\Script\Addressable\Loader\AddressableLocationLoader.cs" />
-     <Compile Include="Assets\Script\Addressable\AddressableBuilder\SyncBundleProvider.cs" />
-     <Compile Include="Assets\Script\Addressable\Addressableloader.cs" />
-     <Compile Include="Assets\Script\Addressable\Loader\AssetsLoader.cs" />
-     <Compile Include="Assets\Script\Addressable\Manager\AddressableManager.cs" />
-     <Compile Include="Assets\Script\Addressable\AddressableAnalyzer\AddressableInitial.cs" />
+     <Compile Include="Assets\Scripts\Addressable\Addressableloader.cs" />
+     <Compile Include="Assets\Scripts\Addressable\AddressableBuilder\SyncBundleProvider.cs" />
+     <Compile Include="Assets\Scripts\UI\UI_Manager.cs" />
+     <Compile Include="Assets\Scripts\Addressable\AssetObjects.cs" />
+     <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
+     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\Utility\Extensions.cs" />
+     <Compile Include="Assets\Scripts\UI\UI_Display.cs" />
+     <Compile Include="Assets\Scripts\Utility\Depug.cs" />
+     <Compile Include="Assets\Scripts\Utility\MonoSingleton.cs" />
+     <Compile Include="Assets\Scripts\Utility\Utils.cs" />
+     <Compile Include="Assets\Scripts\Addressable\AddressableAnalyzer\AddressableInitial.cs" />
+     <Compile Include="Assets\Scripts\Addressable\Manager\AddressableManager.cs" />
+     <Compile Include="Assets\Scripts\Utility\Keys.cs" />
+     <Compile Include="Assets\Scripts\Utility\MonoInstance.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -618,35 +618,20 @@
     <Reference Include="System.Xml.XPath.XDocument">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.ARKit">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    <Reference Include="UnityEditor.CacheServer">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARKit.FaceTracking.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
@@ -656,12 +641,6 @@
     </Reference>
     <Reference Include="Unity.XR.ARKit.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -678,32 +657,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.ARSubsystems.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
@@ -717,11 +681,77 @@
     <Reference Include="Unity.XR.ARSubsystems">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.XR.ARKit.FaceTracking">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation.Editor">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARKit">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.MemoryProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARKit.FaceTracking.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -731,33 +761,6 @@
     </Reference>
     <Reference Include="Unity.XR.ARFoundation">
         <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.MemoryProfiler.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.MemoryProfiler">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.MemoryProfiler.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Addressables">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Addressables.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.CacheServer">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ResourceManager">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ScriptableBuildPipeline">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-        <HintPath>D:/Unity Project/Virtual Idol/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

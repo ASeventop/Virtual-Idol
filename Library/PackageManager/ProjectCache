@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637504277148355811
-    m_Hash: 4130145154
+      ticks: 637504287227887987
+    m_Hash: 2939417854
   m_LockFileStatus:
     m_FilePath: D:/Unity Project/Virtual Idol/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637504277162774224
-    m_Hash: 3087022032
+      ticks: 637504287241235973
+    m_Hash: 3662023216
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -580,6 +580,97 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
+        path: 
+    - packageId: com.unity.localization@0.10.0-preview
+      testable: 0
+      isDirectDependency: 1
+      version: 0.10.0-preview
+      source: 1
+      resolvedPath: D:\Unity Project\Virtual Idol\Library\PackageCache\com.unity.localization@0.10.0-preview
+      assetPath: Packages/com.unity.localization
+      name: com.unity.localization
+      displayName: Localization
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Preview of player localization system. Provides tools for localizing
+        your built application.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.2.3-preview
+        - 0.3.1-preview
+        - 0.3.2-preview
+        - 0.4.0-preview
+        - 0.5.0-preview
+        - 0.5.1-preview
+        - 0.6.0-preview
+        - 0.6.1-preview
+        - 0.7.1-preview
+        - 0.8.0-preview
+        - 0.8.1-preview
+        - 0.9.0-preview
+        - 0.10.0-preview
+        compatible:
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.2.3-preview
+        - 0.3.1-preview
+        - 0.3.2-preview
+        - 0.4.0-preview
+        - 0.5.0-preview
+        - 0.5.1-preview
+        - 0.6.0-preview
+        - 0.6.1-preview
+        - 0.7.1-preview
+        - 0.8.0-preview
+        - 0.8.1-preview
+        - 0.9.0-preview
+        - 0.10.0-preview
+        verified: 
+      dependencies:
+      - name: com.unity.addressables
+        version: 1.16.13
+      resolvedDependencies:
+      - name: com.unity.addressables
+        version: 1.16.16
+      - name: com.unity.scriptablebuildpipeline
+        version: 1.15.2
+      - name: com.unity.modules.assetbundle
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequestassetbundle
+        version: 1.0.0
+      keywords:
+      - localization
+      - locale
+      - language
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637472544690000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.localization.git
+        revision: 14d19bba320b6cfd22746af49fbafe0740bc10ca
         path: 
     - packageId: com.unity.memoryprofiler@0.2.8-preview.2
       testable: 0
